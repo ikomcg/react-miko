@@ -30,20 +30,6 @@ const PSD_projects = [
     const [btn_Link, set_Link] = useState(false);
  
 
-    useEffect(() =>{
-        const URL = window.location.pathname
-        switch(URL){
-            case '/home':
-                set_Link(val => val = false)
-                break;
-            case '/project':
-                set_Link(val => val = true)
-                break;
-        }
-        
-
-    },[])
-
     return (
         projects.map((items, index) => 
         <div key={index} className='project-card flex flex-row mb-5 flex-nowrap items-start'>
