@@ -1,47 +1,48 @@
 import motoRC from '../../images/home/motorcwide.png'
 import emed from '../../images/home/e-medlearning.png'
 import kodego from '../../images/home/kodegoelms.png'
- 
+
+import tanatos from '../../images/project/psd/tanatos.png'
+import uranos from '../../images/project/psd/uranos.png'
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { useEffect, useRef } from 'react';
+import { GoArrowSmallRight } from 'react-icons/go';
+import { useEffect, useState } from 'react'
 
+export const Myprojects = () => {
 
-
-const Myprojects = () => {
-    
-    const btn_Link = useRef(false);
-
-    useEffect(() =>{
-       
-        const loc = window.location.pathname
-        switch(loc) {
-            case '/home':
-                btn_Link.current = false
-                break;
-            case '/project':
-                btn_Link.current = true
-                break;
-            default:
-                btn_Link.current = false
-        }
-        
-
-    },[])
-
+    const [btn_Link, set_Link] = useState(false);
+ 
     const projects = [
-        {id: 1,  img: motoRC, title: 'motoRC', description: 'Is an online motorcycle shop that   can find an enormous selection of gear, parts, and accessories, and   to help riders community in the Philippines', information: 'e-commerce', Projetlink: 'https://ikomcg.github.io/motorc/'},
+        {img: motoRC, title: 'motoRC', description: 'Is an online motorcycle shop that   can find an enormous selection of gear, parts, and accessories, and   to help riders community in the Philippines', information: 'e-commerce', link: 'https://ikomcg.github.io/motorc/'},
     
-        {id: 2, img: emed, title:'e-MedLearning', description: 'Online medical sources provide general, easily understandable information  about symptoms, treatment options', information: 'Information & Education web site', Projetlink:'https://ikomcg.github.io/e-medlearning/'},
+        {img: emed, title:'e-MedLearning', description: 'Online medical sources provide general, easily understandable information  about symptoms, treatment options', information: 'Information & Education web site', link:'https://ikomcg.github.io/e-medlearning/'},
     
-        {id: 3, img: kodego, title: 'kodeGo learning Management System', description: 'Introducing the online and onsite Education at KodeGo Bootcamp. The kodeGo Bootcamp Learning Model is an educational framework to enable students to continue their studies, move up to the next level and graduate', information: 'Education Learning Management System' , Projetlink:'http://kodegoelms.ml'}
+        {img: kodego, title: 'kodeGo learning Management System', description: 'Introducing the online and onsite Education at KodeGo Bootcamp. The kodeGo Bootcamp Learning Model is an educational framework to enable students to continue their studies, move up to the next level and graduate', information: 'Education Learning Management System' , link:'http://kodegoelms.ml'}
     ]
 
-    return (
-        projects.map((items) => 
-        <div key={items.id} className='project-card flex flex-row mb-5 flex-nowrap items-start'>
-            <div className="home-projects flex flex-col image-left p-2 overflow-hidden w-7/12" >
+    useEffect(() =>{
 
+        const loc_url = window.location.pathname
+        switch(loc_url){
+            case '/home':
+                set_Link(false)
+                break;
+            case '/project':
+                set_Link(true)
+                break;
+            default:
+                set_Link(false)
+        }
+        
+    },[])
+
+    return (
+        
+        projects.map((items, index) => 
+        <div key={index} className='project-card flex flex-row mb-5 flex-nowrap items-start '>
+            <div className="home-projects flex flex-col image-left p-2 overflow-hidden w-7/12" >
                 <LazyLoadImage 
                  className='w-full' 
                  src={items.img} 
@@ -49,8 +50,8 @@ const Myprojects = () => {
                  effect="blur"
                 />
                 {
-                    btn_Link.current ? 
-                    <a href={items.Projetlink} rel="noreferrer" target='_blank' className='bg-kodego font-bold rounded-xl  px-5 py-1.5 text-bgviol w-max hover:scale-105'>{items.title}</a>
+                    btn_Link? 
+                    <a href={items.link} rel="noreferrer" target='_blank' className='bg-kodego font-bold rounded-xl  px-5 py-1.5 text-bgviol w-max hover:scale-105'>{items.title}</a>
                     : <a href='https://kodego.ph/' rel="noreferrer" target='_blank' className='text-bgviol w-max hover:scale-105'>Kodego.ph</a>
                 }
             </div>
@@ -65,4 +66,41 @@ const Myprojects = () => {
         )
     )
 }
-export default Myprojects;
+
+
+export const PsdProjects = () => {
+    const PSD_projects = [
+        {img: uranos, title: 'Uranos', link:'https://uranusph.tk/'},
+    
+        {img: tanatos, title:'Tantos', link:'https://tanatosph.ml/'}
+    ];
+    return (
+        PSD_projects.map((items, index) => 
+        <div key={index} className='psd-card w-1/3 '>
+            <div className='shadow-2md w-95 mx-auto'>
+                <div className="flex flex-col image-left p-2 overflow-hidden w-full" >
+                    <LazyLoadImage 
+                    className='w-full'
+                    src={items.img} 
+                    alt={items.title} 
+                    effect="blur"
+                    />
+                </div>
+                <div className="flex flex-col items-center justify-between w-full p-2 mt-2 ">
+                    <h4 className='font-bold text-2xl' >{items.title}</h4>
+                    <div className='flex items-center justify-center my-2'>
+                        <ul>
+                            <li className='flex items-center justify-center underline'>
+                                <a href={items.link} rel="noreferrer" target='_blank' className='text-bgviol '>
+                                VIEW 
+                                </a>
+                                <GoArrowSmallRight className='text-xl text-bgviol'/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        )
+    )
+}

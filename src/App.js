@@ -6,11 +6,12 @@ import Header from './Pages/components/Header'
 
 import Home from './Pages/Home'
 import About from './Pages/About';
+import Project from './Pages/Projects'
 
 // import Contact from './pages/Contact'
 // 
 // import NoPage from './pages/NoPage'
-// import Project from './pages/Project'
+
 // import Skill from './pages/Skill'
 
 
@@ -23,8 +24,8 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
-              {/* <Route path='/project' element={<Project/>}/>
-            <Route path='/skill' element={<Skill/>}/>
+            <Route path='/project' element={<Project/>}/>
+            {/* <Route path='/skill' element={<Skill/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='*' element={<NoPage/>}/> */}
           </Routes>
