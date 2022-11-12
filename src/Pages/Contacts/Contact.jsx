@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import ContactForm from './ContactForm';
 import { hr } from '../Home/Projects/Projects';
 import gmail from '../../images/contact/gmail.png'
@@ -7,7 +7,7 @@ import { CgPhone } from 'react-icons/cg'
 
 const Contact = () =>{
 
-    const bol = useRef(false);
+    const [bol, setBol] = useState(false);
 
     useEffect(() =>{
        
@@ -15,13 +15,13 @@ const Contact = () =>{
 
         switch(loc) {
             case '/home':
-                bol.current = false
+                setBol(false)
                 break;
             case '/project':
-                bol.current = true
+                setBol(true)
                 break;
             default:
-                bol.current = false
+                setBol(false)
         }
         
 
@@ -38,7 +38,7 @@ const Contact = () =>{
                     This is my contacts and you can reach me out in many ways. You can  direct message me if you want, book a meeting so we can talk about your thoughts
                     </p>
                 </div>
-                {bol.current &&
+                {bol &&
                     <div className='flex flex-col justify-center mt-10'>
                         <ul className='flex flex-col '>
                             <li className='shadow-md'>
