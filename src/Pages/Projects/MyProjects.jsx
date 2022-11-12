@@ -24,7 +24,7 @@ const Myprojects = () => {
         }
         
 
-    },[loc])
+    },[])
 
     const projects = [
         {id: 1,  img: motoRC, title: 'motoRC', description: 'Is an online motorcycle shop that   can find an enormous selection of gear, parts, and accessories, and   to help riders community in the Philippines', information: 'e-commerce', Projetlink: 'https://ikomcg.github.io/motorc/'},
