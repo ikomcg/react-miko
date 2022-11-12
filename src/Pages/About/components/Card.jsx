@@ -5,7 +5,7 @@ function Card(prop) {
     const {title, span1, span2, description, Icons} = prop
     return (
         <div className='card-experience flex justify-center w-1/3'>
-            <div className="card shadow-2md w-95">
+            <div className="card shadow-md w-95">
                 <Icons className='text-bgviol text-3xl'/>
                 <div className='my-5'>
                     <h4 className='font-bold text-xl '>
