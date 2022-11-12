@@ -1,17 +1,13 @@
 import React from 'react'
- 
-
-
 
 const Contact = () =>{
     
-
     return (
         <div className='contact-home flex flex-row justify-between px-8 mb-40'>
             <div className="left-form w-1/2 flex flex-col pr-10">
                 <div>
                   
-                    <h3 className='font-black my-10 '>
+                    <h3 className='font-black my-10'>
                     let’s talk about your thoughts
                     </h3>
                     <p className='font-medium'>
