@@ -6,18 +6,19 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { GoArrowSmallRight } from 'react-icons/go';
+import { useState } from 'react';
 
 
 
 
 const PsdProjects = () => {
-    const PSD_projects = [
+    const [psdProjects,setProjects]= useState([
         {id: 1, img: uranos, title: 'Uranos', Projetlink:'https://uranusph.tk/'},
     
         {id: 2, img: tanatos, title:'Tantos', Projetlink:'https://tanatosph.ml/'}
-    ]
+    ])
     return (
-        PSD_projects.map((items) => 
+        psdProjects.map((items) => 
         <div key={items.id} className='psd-card w-1/3 '>
             <div className='shadow-2md w-95 mx-auto'>
                 <div className="flex flex-col image-left p-2 overflow-hidden w-full" >
