@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import {hr} from '../home/projects/Projects'
+import {hr} from '../Home/Projects/Projects'
 import about from  '../../images/about/IMG-6346755e366ad9.97123377.jpg'
 import skill from '../../images/skill/me2.gif'
 import working from '../../images/project/Freelance-jobs.png'
