@@ -9,9 +9,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const images = [
-    {id: 1, img: oracle},
-    {id: 2, img: network},
-    {id: 3, img: sap}
+    {id: 1, imagesCertificate: oracle},
+    {id: 2, imagesCertificate: network},
+    {id: 3, imagesCertificate: sap}
 ] 
 const Certificates = () =>{
 
@@ -19,8 +19,8 @@ const Certificates = () =>{
     const [certificate, setCertificate] = useState(null);
 
     const OpenModal = (id) => {
-        const image = images.find(img =>  img.id === id)
-        setCertificate(image.img)
+        const certificateModal = certificateModal.find(pic =>  pic.id === id)
+        setCertificate(certificateModal.imagesCertificate)
         setShowImg(i => true);   
     };
 
@@ -32,7 +32,7 @@ const Certificates = () =>{
                 {images.map((items, index)=> (
                     <div key={index} >
                         <button className='w-11/12' onClick={() => {OpenModal(items.id);}}>    
-                            <LazyLoadImage src={items.img} alt="" effect='blur'/>
+                            <LazyLoadImage src={items.imagesCertificate} alt="" effect='blur'/>
                         </button>
                     </div>
                 ))}
