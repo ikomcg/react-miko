@@ -1,22 +1,22 @@
 import React, { useEffect, useRef } from 'react'
 
 const Contact = () =>{
-    const bol = useRef(false)
+    const link_loc = useRef(false);
 
-    useEffect(()=> {
-
-        const location  = window.location.pathname;
-
-        switch(location){
-            case '/contact':
-                bol.current = true
-                break;
+    useEffect(() =>{
+       
+        const loc = window.location.pathname
+        switch(loc) {
             case '/home':
-                bol.current = false
+                link_loc.current = false
+                break;
+            case '/project':
+                link_loc.current = true
                 break;
             default:
-                bol.current = true
+                link_loc.current = false
         }
+        
 
     },[])
     return (
