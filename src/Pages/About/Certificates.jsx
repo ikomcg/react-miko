@@ -16,11 +16,11 @@ const images = [
 const Certificates = () =>{
 
     const [showImg, setShowImg] = useState(false);
-    const [img, setImg] = useState(null);
+    const [certificate, setCertificate] = useState(null);
 
     const OpenModal = (id) => {
         const image = images.find(img =>  img.id === id)
-        setImg(image.img)
+        setCertificate(image.img)
         setShowImg(i => true);   
     };
 
@@ -37,7 +37,7 @@ const Certificates = () =>{
                     </div>
                 ))}
             </div>
-            {showImg && <Modal images={img} view={setShowImg}/>}
+            {showImg && <Modal certificate={certificate} view={setShowImg}/>}
         </section>
     )
 }
