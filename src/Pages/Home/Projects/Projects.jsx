@@ -1,5 +1,5 @@
 import React from 'react'
-// import Myprojects from 'c:/Users/miko/my-react-porfolio/public/Projects/MyProjects';
+// import Myprojects from './Projects/MyProjects';
 
 export const hr = <hr className='text-bgviol h-1.5 w-40 bg-bgviol' />
 
