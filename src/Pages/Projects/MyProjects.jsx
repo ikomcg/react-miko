@@ -4,23 +4,23 @@ import kodego from '../../images/home/kodegoelms.png'
  
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 
 
 const Myprojects = () => {
     
-    const [btn_Link, set_Link] = useState(null);
+    const btn_Link = useRef(false);
 
     useEffect(() =>{
        
         const loc = window.location.pathname
         switch(loc) {
             case '/home':
-                set_Link(btn_Link = false)
+                btn_Link.current = false
                 break;
             case '/project':
-                set_Link(btn_Link = true)
+                btn_Link.current = true
                 break;
         }
         
