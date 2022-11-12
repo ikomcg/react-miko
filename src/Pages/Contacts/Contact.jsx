@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const Contact = () =>{
 
@@ -32,6 +32,9 @@ const Contact = () =>{
                     This is my contacts and you can reach me out in many ways. You can  direct message me if you want, book a meeting so we can talk about your thoughts
                     </p>
                 </div>
+            </div>
+            <div className="right-form w-1/2 rounded-xl shadow-2md p-10">
+          
             </div>
         </div>
     )
