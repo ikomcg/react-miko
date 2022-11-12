@@ -37,7 +37,7 @@ const Certificates = () =>{
                     </div>
                 ))}
             </div>
-            {showImg && <Modal image={img} view={setShowImg}/>}
+            {showImg && <Modal images={img} view={setShowImg}/>}
         </section>
     )
 }
