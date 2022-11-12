@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import ContactForm from './ContactForm';
 import { hr } from '../Home/Projects/Projects';
 import gmail from '../../images/contact/gmail.png'
 import schedule from '../../images/contact/schedule.png'
@@ -11,6 +12,7 @@ const Contact = () =>{
     useEffect(() =>{
        
         const loc = window.location.pathname
+
         switch(loc) {
             case '/home':
                 bol.current = false
@@ -24,7 +26,6 @@ const Contact = () =>{
         
 
     },[])
-    
     return (
         <div className='contact-home flex flex-row justify-between px-8 mb-40'>
             <div className="left-form w-1/2 flex flex-col pr-10">
@@ -37,7 +38,7 @@ const Contact = () =>{
                     This is my contacts and you can reach me out in many ways. You can  direct message me if you want, book a meeting so we can talk about your thoughts
                     </p>
                 </div>
-                {bol &&
+                {bol.current &&
                     <div className='flex flex-col justify-center mt-10'>
                         <ul className='flex flex-col '>
                             <li className=''>
@@ -63,7 +64,7 @@ const Contact = () =>{
                 }
             </div>
             <div className="right-form w-1/2 rounded-xl  p-10">
-               
+            <ContactForm contact={bol.current}/>
             </div>
         </div>
     )

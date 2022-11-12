@@ -49,7 +49,7 @@ const Myprojects = () => {
                  effect="blur"
                 />
                 {
-                    btn_Link? 
+                    btn_Link.current ? 
                     <a href={items.Projetlink} rel="noreferrer" target='_blank' className='bg-kodego font-bold rounded-xl  px-5 py-1.5 text-bgviol w-max hover:scale-105'>{items.title}</a>
                     : <a href='https://kodego.ph/' rel="noreferrer" target='_blank' className='text-bgviol w-max hover:scale-105'>Kodego.ph</a>
                 }
