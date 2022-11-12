@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from './Contact/Contact'
+import Contact from 'c:/Users/miko/my-react-porfolio/public/Contact/Contact'
 import MainLeft from './Home/MainLeft'
 import MainRight from './Home/MainRight'
 import Projects from './Home/Projects/Projects'
