@@ -1,8 +1,7 @@
 import React from 'react'
 import MainLeft from './Home/MainLeft'
 import MainRight from './Home/MainRight'
-
-// import Projects from './home/projects/Projects'
+import Projects from './Home/Projects/Projects'
 // import Forms from './contact/Contact'
 
 const Home = () => {
@@ -12,8 +11,8 @@ const Home = () => {
                 <MainLeft/>
                 <MainRight/>
             </main>
-            {/* <Projects/>
-            <Forms/> */}
+            <Projects/>
+            {/* <Forms/> */}
         </div>
          
     )
