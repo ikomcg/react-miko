@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Contact from './Contacts/Contact'
 import MainLeft from './Home/MainLeft'
 import MainRight from './Home/MainRight'
 import Projects from './Home/Projects/Projects'
@@ -13,7 +13,7 @@ const Home = () => {
                 <MainRight/>
             </main>
             <Projects/>
-            
+            <Contact/>
         </div>
          
     )
