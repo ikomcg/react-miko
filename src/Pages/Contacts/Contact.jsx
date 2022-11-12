@@ -33,7 +33,7 @@ const Contact = () =>{
                     </p>
                 </div>
             </div>
-            <div className="right-form">
+            <div className="right-form w-1/2 rounded-xl shadow-2md p-10">
           
             </div>
         </div>
