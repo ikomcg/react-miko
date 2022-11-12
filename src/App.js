@@ -8,9 +8,8 @@ import Home from './Pages/Home'
 import About from './Pages/About';
 import Project from './Pages/Projects'
 import Skill from './Pages/Skill'
+import Contact from './Pages/Contact'
 
-// import Contact from './pages/Contact'
-// 
 // import NoPage from './pages/NoPage'
 
 
@@ -26,8 +25,8 @@ const App = () => {
             <Route path='/about' element={<About/>}/>
             <Route path='/project' element={<Project/>}/>
             <Route path='/skill' element={<Skill/>}/>
-            {/* <Route path='/contact' element={<Contact/>}/>
-            <Route path='*' element={<NoPage/>}/> */}
+            <Route path='/contact' element={<Contact/>}/>
+              {/* <Route path='*' element={<NoPage/>}/> */}
           </Routes>
         </div>
       </div>
