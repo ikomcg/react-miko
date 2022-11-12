@@ -8,7 +8,7 @@ const Contact = () =>{
                 <div>
                   
                     <h3 className='font-black my-10'>
-                    let’s talk about your thoughts
+                    let's talk about your thoughts
                     </h3>
                     <p className='font-medium'>
                     This is my contacts and you can reach me out in many ways. You can  direct message me if you want, book a meeting so we can talk about your thoughts
