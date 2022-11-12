@@ -40,11 +40,11 @@ const Contact = () =>{
                 {bol &&
                     <div className='flex flex-col justify-center mt-10'>
                         <ul className='flex flex-col '>
-                            <li className='shadow-2md'>
+                            <li className=''>
                                 <img src={gmail} alt="" />
                                 mikogurrobat0@gmail.com
                             </li>
-                            <li className='shadow-2md'>
+                            <li className=''>
                                 <CgPhone className='text-2xl text-bgviol'/>
                                 09269244053
                             </li>
