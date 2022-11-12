@@ -1,5 +1,5 @@
 import React from 'react'
-// import Myprojects from './Projects/MyProjects';
+import Myprojects from '.././../Projects/MyProjects';
 
 export const hr = <hr className='text-bgviol h-1.5 w-40 bg-bgviol' />
 
@@ -11,7 +11,7 @@ const  Projects = () =>{
                 <h3>My Projects</h3>
             </div>
             <div className="projects flex flex-col my-20">
-                {/* <Myprojects/> */}
+                <Myprojects/>
             </div>
         </div>
     )

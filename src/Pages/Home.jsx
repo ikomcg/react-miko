@@ -2,6 +2,7 @@ import React from 'react'
 import MainLeft from './Home/MainLeft'
 import MainRight from './Home/MainRight'
 import Projects from './Home/Projects/Projects'
+
 // import Forms from './contact/Contact'
 
 const Home = () => {
