@@ -7,12 +7,12 @@ import Header from './Pages/components/Header'
 import Home from './Pages/Home'
 import About from './Pages/About';
 import Project from './Pages/Projects'
+import Skill from './Pages/Skill'
 
 // import Contact from './pages/Contact'
 // 
 // import NoPage from './pages/NoPage'
 
-// import Skill from './pages/Skill'
 
 
 const App = () => {
@@ -25,8 +25,8 @@ const App = () => {
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/project' element={<Project/>}/>
-            {/* <Route path='/skill' element={<Skill/>}/>
-            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/skill' element={<Skill/>}/>
+            {/* <Route path='/contact' element={<Contact/>}/>
             <Route path='*' element={<NoPage/>}/> */}
           </Routes>
         </div>
