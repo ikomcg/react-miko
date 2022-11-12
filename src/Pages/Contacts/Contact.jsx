@@ -33,7 +33,7 @@ const Contact = () =>{
                     </p>
                 </div>
             </div>
-            <div className="">
+            <div className="right-form">
           
             </div>
         </div>
