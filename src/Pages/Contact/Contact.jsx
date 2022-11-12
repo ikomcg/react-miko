@@ -6,7 +6,7 @@ import schedule from '../../images/contact/schedule.png'
 import { CgPhone } from 'react-icons/cg';
 import { useRef } from 'react'
 
-const Contact =() =>{
+const Contact = () =>{
     
     const bol = useRef(false)
 
@@ -65,7 +65,7 @@ const Contact =() =>{
                 }
             </div>
             <div className="right-form w-1/2 rounded-xl shadow-2md p-10">
-                <ContactForm contact={bol}/>
+                <ContactForm contact={bol.current}/>
             </div>
         </div>
     )
