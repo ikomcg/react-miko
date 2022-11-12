@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Route, Routes } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Footer from './Pages/components/Footer'
+import Header from './Pages/components/Header'
+
+import Home from './Pages/Home'
+
+// import About from './pages/About';
+
+// import Contact from './pages/Contact'
+// 
+// import NoPage from './pages/NoPage'
+// import Project from './pages/Project'
+// import Skill from './pages/Skill'
+
+
+const App = () => {
+    return (
+      <>
+      <div>
+        <Header/>
+        <div className='my-16'>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            {/* <Route path='/about' element={<About/>}/>
+            <Route path='/project' element={<Project/>}/>
+            <Route path='/skill' element={<Skill/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='*' element={<NoPage/>}/> */}
+          </Routes>
+        </div>
+      </div>
+      <Footer/>
+      </>
+      
+    )
 }
 
-export default App;
+export default App

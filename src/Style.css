@@ -1,0 +1,340 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    display: flex;
+    flex-flow: column nowrap;
+}
+body{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    color:#3A395D;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+div#root{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    height: 100vh;
+  
+}
+button.menu-mobile{
+    display: none;
+}
+div.btn-home button:first-child{
+    background-color: #7050EF;
+    color: #ffffffff;
+}
+div.btn-home button{
+    border-radius: 15px;
+    padding: 20px 50px;
+    margin: 10px 15px;
+
+    font-size: 18px;
+    font-weight: 600;
+    
+    
+}
+h3{
+    font-size: 32px;
+    font-weight: 900;
+
+}
+div.btn-home button:hover{
+    transform: scale(1.05);
+}
+/* right home style */
+
+div.right-home img{
+    position: absolute;
+    margin: 0 auto;
+    top: 10%;
+    height: 450px;
+    
+}
+div.right-home > div{
+    margin: 0 auto;
+}
+div.right-home .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    margin: 0 auto;
+    
+}
+div.right-home .circle.c1{
+    width: 75%;
+    height: 480px;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+
+}
+div.right-home .circle.c2{
+    width: 95%;
+    height: 460px;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+}
+div.right-home .circle.c3{
+    background-color: #7050EF;
+    height: 420px;
+    width: 90%;
+    
+}
+div.right-home .circle.c4{
+    background-color: #ffffffff;
+    width: 80%;
+    height: 320px;
+}
+div.right-home .circle.c5{
+    position: absolute;
+    bottom: 0;
+    overflow-y: hidden;
+    background-color:transparent;
+    height: 490px;
+    width: calc(100% + 20%);
+    border-radius: 0;
+    border-bottom-left-radius: 49%; 
+    border-bottom-right-radius: 49%;
+}
+
+
+/* projects style */
+
+div.project-card:nth-child(even){
+    flex-direction: row-reverse;
+}
+div.project-card a{
+    background-color: #F5F4FF;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 10px 0;
+    
+}
+div.project-card .right-info{
+    padding: 0 20px;
+}
+div.project-card .right-info div{
+    margin-bottom: 40px;
+}
+div.project-card .right-info h4{
+    font-size: 26px;
+}
+div.project-card .right-info p{
+ font-size: 16px;
+}
+
+/* contact */
+
+
+div.contact-home div.left-form h3{
+    font-size: 48px;
+    line-height: 50px;
+}
+div.contact-home div.left-form p{
+    font-size: 18px;
+}
+div.contact-home div.left-form ul.flex li img{
+    max-width: 50px;
+    
+}
+div.contact-home div.left-form ul.flex li{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #F5F4FF;
+    width: fit-content;
+
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+div.contact-home div.left-form .book-meeting a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0;
+
+    background-color: #7050EF;
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+    color: #ffffffff;
+}
+div.contact-home div.left-form .book-meeting img{
+    max-width: 50px;
+    width: 100%;
+}
+div.contact-home .right-form input:focus, textarea:focus{
+    border-color: #7050EF;
+    color: #3A395D;
+    font-weight: 400;
+}
+div.contact-home .right-form ul li{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* about page */
+
+/* main */
+
+main.about .image{
+    margin-right: 75px;
+    width: 40%;
+}
+main.about .image span{
+    width: 100%;
+    object-position: center center;
+}
+main.about .image span img{
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+}
+/* certificates */
+section.certificates div.row-certificate > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33.333%;
+    padding: 10px;
+
+}
+section.certificates div.row-certificate > div button{
+    display: flex;
+    justify-content: center;
+
+    width: 95%;
+
+    outline: none;
+
+    background-color: #F5F4FF;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+section.certificates div.row-certificate > div span{
+    width: 95%;
+
+    padding: 10px 0;
+}
+section.certificates div.row-certificate > div span:hover{
+    transform: scale(1.02);
+    transition: ease-in .3s;
+}
+section.certificates div.row-certificate > div span img{
+    height: 400px;
+    width: 100%;
+}
+section.certificates div.show-image > div span{
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+}
+
+/* experience */
+section.experience div.card-row .card{
+    width: 95%;
+    padding: 20px;
+}
+
+/* skill */
+
+h3.skill-heading::after{
+    display: block;
+    content: '';
+
+    width: 100%;
+    height: 3px;
+    
+    background-color: #7050EF;
+}
+section.skill-page div.card-row .card-row:hover{
+    position: relative;
+    transform: scale(1.05);
+    top: -10px;
+    
+}
+section.skill-page div.card-row .card-row{
+    transition: all ease .5s;
+}
+section.skill-page div.card-row .card-row a{
+    margin: 0 auto;
+    width: 95%;
+    
+    background-color: #F5F4FF;
+    padding: 5px 10px;
+}
+section.skill-page div.card-row .card-row .content img{
+    max-width: 60px;
+    width: 100%;
+    height: 60px;
+   
+    padding: 2px;
+}
+
+/* nopage */
+
+section.no-page div.page404 span{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+section.no-page div.right-home img{
+    position: absolute;
+    margin: 0 auto;
+    top: 10%;
+    height: 100px;
+    
+}
+section.no-page div.right-home{
+    max-width: 100px;
+    height: 100px;
+    width: 100%;
+}
+section.no-page div.right-home > div{
+    margin: 0 auto;
+}
+
+section.no-page div.right-home .circle.c1{
+    width: 100%;
+    height: 100px;
+
+}
+section.no-page div.right-home .circle.c2{
+    width: 95%;
+    height: 90px;
+}
+section.no-page div.right-home .circle.c3{
+    height: 80px;
+    width: 95%;
+    
+}
+section.no-page div.right-home .circle.c4{
+    width: 70%;
+    height: 50px;
+}
+section.no-page div.right-home .circle.c5{
+    height: 90px;
+    width: calc(100% + 22%);
+
+}
+section.no-page div.right-home .circle.c5 span{
+    height: 110px !important;
+}
