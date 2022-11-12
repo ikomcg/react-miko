@@ -1,6 +1,6 @@
 import React from 'react'
  
-import { hr } from '../Home/Projects/Projects'
+
 
 
 const Contact = () =>{
@@ -10,7 +10,7 @@ const Contact = () =>{
         <div className='contact-home flex flex-row justify-between px-8 mb-40'>
             <div className="left-form w-1/2 flex flex-col pr-10">
                 <div>
-                    {hr}
+                  
                     <h3 className='font-black my-10 '>
                     let’s talk about your thoughts
                     </h3>
