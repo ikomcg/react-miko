@@ -41,11 +41,11 @@ const Contact = () =>{
                 {bol.current &&
                     <div className='flex flex-col justify-center mt-10'>
                         <ul className='flex flex-col '>
-                            <li className=''>
+                            <li className='shadow-md'>
                                 <img src={gmail} alt="" />
                                 mikogurrobat0@gmail.com
                             </li>
-                            <li className=''>
+                            <li className='shadow-md'>
                                 <CgPhone className='text-2xl text-bgviol'/>
                                 09269244053
                             </li>
@@ -53,7 +53,7 @@ const Contact = () =>{
                         <div className='book-meeting mt-20'>
                             <ul>
                                <li className='hover:scale-105'>
-                                    <a href="https://calendly.com/mikogurrobat0" className=''>
+                                    <a href="https://calendly.com/mikogurrobat0" className='shadow-md'>
                                         <img src={schedule} alt="" />
                                         Book a Meeting
                                     </a>
@@ -63,7 +63,7 @@ const Contact = () =>{
                     </div>
                 }
             </div>
-            <div className="right-form w-1/2 rounded-xl  p-10">
+            <div className="right-form w-1/2 rounded-xl shadow-md p-10">
             <ContactForm contact={bol.current}/>
             </div>
         </div>
