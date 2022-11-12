@@ -19,7 +19,7 @@ const PsdProjects = () => {
     return (
         PSD_projects.map((items) => 
         <div key={items.id} className='psd-card w-1/3 '>
-            <div className='shadow-2md w-95 mx-auto'>
+            <div className='shadow-2md mx-auto'>
                 <div className="flex flex-col image-left p-2 overflow-hidden w-full" >
                     <LazyLoadImage 
                     className='w-full'
