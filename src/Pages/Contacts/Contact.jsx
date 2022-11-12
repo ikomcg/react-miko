@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const Contact = () =>{
-    
+    const bol = useRef(false)
+
+    useEffect(()=> {
+
+        const location  = window.location.pathname;
+
+        switch(location){
+            case '/contact':
+                bol.current = true
+                break;
+            case '/home':
+                bol.current = false
+                break;
+            default:
+                bol.current = true
+        }
+
+    },[])
     return (
         <div className='contact-home flex flex-row justify-between px-8 mb-40'>
             <div className="left-form w-1/2 flex flex-col pr-10">
