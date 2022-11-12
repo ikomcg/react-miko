@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import {hr} from '../Home/Projects/Projects'
 import about from  '../../images/about/IMG-6346755e366ad9.97123377.jpg'
 import skill from '../../images/skill/me2.gif'
@@ -36,6 +36,11 @@ const SideCard = () => {
                 paragraph.current = "The tech stacks listed below are what I've been using to build real-world projects. HTML, CSS, JavaScript, and PHP are used in web development. Along with other tools that will enable me to complete my desired project.";
                 image.current = skill ;
                 break;
+            default:
+                heading.current ='';
+                paragraph.current ='';
+                image.current ='';
+                btn.current ='';
         }
     console.log(heading.current)
     return (
