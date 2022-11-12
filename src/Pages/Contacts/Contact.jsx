@@ -17,15 +17,14 @@ const Contact = () =>{
             case '/home':
                 setBol(false)
                 break;
-            case '/project':
+            case '/contact':
                 setBol(true)
                 break;
             default:
                 setBol(false)
         }
-        
-
     },[])
+    console.log(bol)
     return (
         <div className='contact-home flex flex-row justify-between px-8 mb-40'>
             <div className="left-form w-1/2 flex flex-col pr-10">
