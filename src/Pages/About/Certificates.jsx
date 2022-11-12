@@ -19,8 +19,8 @@ const Certificates = () =>{
     const [certificate, setCertificate] = useState(null);
 
     const OpenModal = (id) => {
-        const certificateModal = certificateModal.find(pic =>  pic.id === id)
-        setCertificate(certificateModal.imagesCertificate)
+        const imageModal = images.find(pic =>  pic.id === id)
+        setCertificate(imageModal.imagesCertificate)
         setShowImg(i => true);   
     };
 
