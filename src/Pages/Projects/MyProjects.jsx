@@ -16,15 +16,15 @@ const Myprojects = () => {
         const loc = window.location.pathname
         switch(loc){
             case '/home':
-                set_Link(val => val = false)
+                set_Link(btn_Link = false)
                 break;
             case '/project':
-                set_Link(val => val = true)
+                set_Link(btn_Link = true)
                 break;
         }
         
 
-    },[])
+    },[loc])
 
     const projects = [
         {id: 1,  img: motoRC, title: 'motoRC', description: 'Is an online motorcycle shop that   can find an enormous selection of gear, parts, and accessories, and   to help riders community in the Philippines', information: 'e-commerce', Projetlink: 'https://ikomcg.github.io/motorc/'},
