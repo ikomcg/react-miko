@@ -15,6 +15,10 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+.shadow-md{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+     
+ }
 div#root{
     display: flex;
     flex-flow: column nowrap;
@@ -179,6 +183,7 @@ div.contact-home div.left-form .book-meeting img{
     max-width: 50px;
     width: 100%;
 }
+
 div.contact-home .right-form input:focus, textarea:focus{
     border-color: #7050EF;
     color: #3A395D;
