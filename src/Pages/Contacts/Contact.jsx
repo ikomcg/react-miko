@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 const Contact = () =>{
+
     const link_loc = useRef(false);
 
     useEffect(() =>{
