@@ -1,4 +1,8 @@
 import React, { useEffect, useRef } from 'react'
+import { hr } from '../Home/Projects/Projects';
+import gmail from '../../images/contact/gmail.png'
+import schedule from '../../images/contact/schedule.png'
+import { CgPhone } from 'react-icons/cg'
 
 const Contact = () =>{
 
