@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
  
 import { hr } from '../Home/Projects/Projects'
 
@@ -14,7 +14,7 @@ const Contact = () =>{
                     <h3 className='font-black my-10 '>
                     let’s talk about your thoughts
                     </h3>
-                    <p className='fonts-medium'>
+                    <p className='font-medium'>
                     This is my contacts and you can reach me out in many ways. You can  direct message me if you want, book a meeting so we can talk about your thoughts
                     </p>
                 </div>
