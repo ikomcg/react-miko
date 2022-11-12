@@ -9,12 +9,13 @@ import { useEffect, useState } from 'react';
 
 
 const Myprojects = () => {
-    const [btn_Link, set_Link] = useState(false);
+    
  
 
     useEffect(() =>{
+        const [btn_Link, set_Link] = useState(false);
         const loc = window.location.pathname
-        switch(loc){
+        switch(loc) {
             case '/home':
                 set_Link(btn_Link = false)
                 break;
