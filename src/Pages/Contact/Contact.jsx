@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import ContactForm from './ContactForm'
-import {hr} from 'c:/Users/miko/my-react-porfolio/src/pages/home/projects/Projects'
+import { hr } from '../Home/Projects/Projects'
 import gmail from '../../images/contact/gmail.png'
 import schedule from '../../images/contact/schedule.png'
 import { CgPhone } from 'react-icons/cg';
@@ -11,16 +11,18 @@ const Contact =() =>{
     const bol = useRef(false)
 
     useEffect(()=> {
+
         const location  = window.location.pathname;
+
         switch(location){
             case '/contact':
-                setBol.current =true
+                bol.current =true
                 break;
             case '/home':
-                setBol.current =false
+                bol.current =false
                 break;
             default:
-                setBol.current =true
+                bol.current =true
         }
 
     },[])
