@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import ContactForm from './ContactForm'
+ 
 import { hr } from '../Home/Projects/Projects'
 import gmail from '../../images/contact/gmail.png'
 import schedule from '../../images/contact/schedule.png'
