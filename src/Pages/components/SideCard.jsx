@@ -42,7 +42,6 @@ const SideCard = () => {
                 image.current ='';
                 btn.current ='';
         }
-    console.log(heading.current)
     return (
         <main className='about px-8 flex felx-row flex-nowrap justify-end items-center'>
             <div className='flex flex-col flex-nowrap shadow-md w-2/4 py-10 px-10 relative left-5 bg-white rounded-xl ml-5 z-10'>
