@@ -4,22 +4,22 @@ import about from  '../../images/about/IMG-6346755e366ad9.97123377.jpg'
 import skill from '../../images/skill/me2.gif'
 import working from '../../images/project/Freelance-jobs.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useState } from 'react'
 
 
 const SideCard = () => {
  
-    const [heading, setHeading] = useState('')
-    const [paragraph, setparagraph] = useState('');
+    const [heading, setHeading] = useState(null)
+    const [paragraph, setparagraph] = useState(null);
     const [btn, setBtn] = useState(null);
-    const [image, setImage] = useState('');
+    const [image, setImage] = useState(null);
     
- 
 
     useEffect(()=>{
-        const url = window.location.pathname
-        switch(url){
+        const loc_url = window.location.pathname
+        switch(loc_url){
             case '/about':
                 setHeading(val => val = "about me");
                 setparagraph(val => val = "I am a motivated Junior Web Developer that has experience in creating projects that address specific issues such as the Learning Management System, presently pursuing my long-term career goal is to become a Web Developer, and always eager to learn about coding and I'am currently studying at Balagtas STI.")
