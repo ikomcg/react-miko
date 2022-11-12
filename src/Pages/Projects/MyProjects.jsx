@@ -22,6 +22,8 @@ const Myprojects = () => {
             case '/project':
                 btn_Link.current = true
                 break;
+            default:
+                btn_Link.current = false
         }
         
 
