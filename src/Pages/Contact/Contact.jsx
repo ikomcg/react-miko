@@ -16,13 +16,13 @@ const Contact = () =>{
 
         switch(location){
             case '/contact':
-                bol.current =true
+                bol.current = true
                 break;
             case '/home':
-                bol.current =false
+                bol.current = false
                 break;
             default:
-                bol.current =true
+                bol.current = true
         }
 
     },[])
@@ -65,7 +65,7 @@ const Contact = () =>{
                 }
             </div>
             <div className="right-form w-1/2 rounded-xl shadow-2md p-10">
-                <ContactForm contact={bol.current}/>
+                {/* <ContactForm contact={bol.current}/> */}
             </div>
         </div>
     )
