@@ -65,7 +65,7 @@ const Contact = () =>{
                 }
             </div>
             <div className="right-form w-1/2 rounded-xl shadow-2md p-10">
-                {/* <ContactForm contact={bol.current}/> */}
+          
             </div>
         </div>
     )
