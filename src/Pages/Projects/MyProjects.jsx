@@ -9,11 +9,11 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const projects = [
-    {id: 1,  img: motoRC, title: 'motoRC', description: 'Is an online motorcycle shop that   can find an enormous selection of gear, parts, and accessories, and   to help riders community in the Philippines', information: 'e-commerce', link: 'https://ikomcg.github.io/motorc/'},
+    {id: 1,  img: motoRC, title: 'motoRC', description: 'Is an online motorcycle shop that   can find an enormous selection of gear, parts, and accessories, and   to help riders community in the Philippines', information: 'e-commerce', Projetlink: 'https://ikomcg.github.io/motorc/'},
 
-    {id: 2, img: emed, title:'e-MedLearning', description: 'Online medical sources provide general, easily understandable information  about symptoms, treatment options', information: 'Information & Education web site', link:'https://ikomcg.github.io/e-medlearning/'},
+    {id: 2, img: emed, title:'e-MedLearning', description: 'Online medical sources provide general, easily understandable information  about symptoms, treatment options', information: 'Information & Education web site', Projetlink:'https://ikomcg.github.io/e-medlearning/'},
 
-    {id: 3, img: kodego, title: 'kodeGo learning Management System', description: 'Introducing the online and onsite Education at KodeGo Bootcamp. The kodeGo Bootcamp Learning Model is an educational framework to enable students to continue their studies, move up to the next level and graduate', information: 'Education Learning Management System' , link:'http://kodegoelms.ml'}
+    {id: 3, img: kodego, title: 'kodeGo learning Management System', description: 'Introducing the online and onsite Education at KodeGo Bootcamp. The kodeGo Bootcamp Learning Model is an educational framework to enable students to continue their studies, move up to the next level and graduate', information: 'Education Learning Management System' , Projetlink:'http://kodegoelms.ml'}
 ]
 
 const Myprojects = () => {
@@ -33,7 +33,7 @@ const Myprojects = () => {
                 />
                 {
                     btn_Link? 
-                    <a href={items.link} rel="noreferrer" target='_blank' className='bg-kodego font-bold rounded-xl  px-5 py-1.5 text-bgviol w-max hover:scale-105'>{items.title}</a>
+                    <a href={items.Projetlink} rel="noreferrer" target='_blank' className='bg-kodego font-bold rounded-xl  px-5 py-1.5 text-bgviol w-max hover:scale-105'>{items.title}</a>
                     : <a href='https://kodego.ph/' rel="noreferrer" target='_blank' className='text-bgviol w-max hover:scale-105'>Kodego.ph</a>
                 }
             </div>

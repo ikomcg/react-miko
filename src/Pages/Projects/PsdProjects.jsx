@@ -9,9 +9,9 @@ import { GoArrowSmallRight } from 'react-icons/go';
 
 
 const PSD_projects = [
-    {id: 1, img: uranos, title: 'Uranos', link:'https://uranusph.tk/'},
+    {id: 1, img: uranos, title: 'Uranos', Projetlink:'https://uranusph.tk/'},
 
-    {id: 2, img: tanatos, title:'Tantos', link:'https://tanatosph.ml/'}
+    {id: 2, img: tanatos, title:'Tantos', Projetlink:'https://tanatosph.ml/'}
 ]
 
 const PsdProjects = () => {
@@ -33,7 +33,7 @@ const PsdProjects = () => {
                     <div className='flex items-center justify-center my-2'>
                         <ul>
                             <li className='flex items-center justify-center underline'>
-                                <a href={items.link} rel="noreferrer" target='_blank' className='text-bgviol '>
+                                <a href={items.Projetlink} rel="noreferrer" target='_blank' className='text-bgviol '>
                                 VIEW 
                                 </a>
                                 <GoArrowSmallRight className='text-xl text-bgviol'/>
