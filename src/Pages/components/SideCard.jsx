@@ -41,9 +41,9 @@ const SideCard = () => {
                 break;
             default:
                 setHeading(heading = null )
-                setparagraph(heading = null )
-                setBtn(heading = null )
-                setImage(heading = null )
+                setparagraph(paragraph = null )
+                setBtn(btn = null )
+                setImage(image = null )
             
         }
 
