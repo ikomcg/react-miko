@@ -18,7 +18,8 @@ const SideCard = () => {
     
 
     useEffect(()=>{
-        const loc_url = window.location.pathname
+        const loc_url = window.location.pathname;
+
         switch(loc_url){
             case '/about':
                 setHeading(val => val = "about me");
@@ -38,7 +39,11 @@ const SideCard = () => {
                 setparagraph(val => val = "The tech stacks listed below are what I've been using to build real-world projects. HTML, CSS, JavaScript, and PHP are used in web development. Along with other tools that will enable me to complete my desired project.");
                 setImage(skill);
                 break;
-
+            default:
+                setHeading(heading = null )
+                setparagraph(heading = null )
+                setBtn(heading = null )
+                setImage(heading = null )
             
         }
 
