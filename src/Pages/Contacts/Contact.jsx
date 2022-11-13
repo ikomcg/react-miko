@@ -24,7 +24,6 @@ const Contact = () =>{
                 setBol(false)
         }
     },[])
-    console.log(bol)
     return (
         <div className='contact-home flex flex-row justify-between px-8 mb-40'>
             <div className="left-form w-1/2 flex flex-col pr-10">
@@ -63,7 +62,7 @@ const Contact = () =>{
                 }
             </div>
             <div className="right-form w-1/2 rounded-xl shadow-md p-10">
-            <ContactForm contact={bol.current}/>
+            <ContactForm contact={bol}/>
             </div>
         </div>
     )
