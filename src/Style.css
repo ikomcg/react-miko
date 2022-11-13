@@ -19,6 +19,24 @@ body::-webkit-scrollbar{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
      
  }
+ /* swal */
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #7050EF;
+    font-size: 12px;
+    outline: none !important;
+}
+.swal-button:hover {
+    background-color: #7050EF !important;
+    transform: scale(1.02);
+}
+.swal-footer {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+/*  */
 div#root{
     display: flex;
     flex-flow: column nowrap;
