@@ -12,29 +12,27 @@ const Contactform = (props) =>{
         e.preventDefault();
       emailjs.sendForm('service_97zm88b', 'template_bajmsuj', form.current, '8A9VfCWgMh5-xD_NP')
         .then((result) => {
-            if(result.text == 'OK'){
-                swal({
-                    title: "Email",
-                    text: "THANKS FOR YOUR EMAIL",
-                    icon: "success",
-                    buttons: "OK",
-                    dangerMode: true,
-                  }).then((ok) => {
-                    if (ok) {
-                        window.location.reload();
-                    } 
-                })
+            switch (result.text){
+                case 'OK':
+                    swal({
+                        title: "Email",
+                        text: "THANKS FOR YOUR EMAIL",
+                        icon: "success",
+                        buttons: "OK",
+                        dangerMode: true,
+                      }).then((ok) => {
+                        if (ok) {
+                            window.location.reload();
+                        } 
+                    })
+                    default:
+                        swal({
+                            title: "Email",
+                            text: result.text,
+                            icon: "info",
+                            buttons: "OK",
+                        })
             }
-            else{
-               
-                swal({
-                    title: "Email",
-                    text: result.text,
-                    icon: "info",
-                    buttons: "OK",
-                })
-            }
-            
         }, (error) => {
                 swal({
                     title: "Email",
