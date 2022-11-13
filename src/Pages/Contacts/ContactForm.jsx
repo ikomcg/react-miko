@@ -25,6 +25,7 @@ const Contactform = (props) =>{
                             window.location.reload();
                         } 
                     })
+                    break;
                     default:
                         swal({
                             title: "Email",
