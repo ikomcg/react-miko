@@ -7,8 +7,8 @@ import Database from './Database'
 import html from '../../images/skill/html.png'
 import css from '../../images/skill/css.png'
 import js from '../../images/skill/js.png'
-import c from '../../images/skill/c.png'
-import java from '../../images/skill/java.png'
+import sass from '../../images/skill/Sass.png'
+
 
 
 //libraries and frameworks
@@ -31,8 +31,7 @@ const stack = [
     {name: 'HTML', image:html, link: 'https://www.w3schools.com/html/default.asp'},
     {name: 'CSS', image:css, link: 'https://web.dev/learn/css/'},
     {name: 'Java Script', image:js, link: 'https://www.w3schools.com/js/default.asp'},
-    {name: 'Java', image:java, link: 'https://www.tutorialspoint.com/java/java_documentation.htm'},
-    {name: 'C#', image:c, link: 'https://www.tutorialspoint.com/csharp/index.htm'},
+    {name: 'Sass', image:sass, link: 'https://www.w3schools.com/sass/default.php'},
 
 ]
 const frameworks = [

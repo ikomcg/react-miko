@@ -20,7 +20,7 @@ const SideCard = () => {
                 heading.current = "about me";
                 paragraph.current = "I am a motivated Junior Web Developer that has experience in creating projects that address specific issues such as the Learning Management System, presently pursuing my long-term career goal is to become a Web Developer, and always eager to learn about coding and I'am currently studying at Balagtas STI."
                 btn.current = <div className='flex item-center justify-center mt-10'>
-                <a href='https://drive.google.com/file/d/10Y01DIfvM5Bm-NGq-v2Csu9ul2EyMJJI/view?usp=share_link' className='bg-bgviol text-white font-medium text-lg py-1 px-5 rounded-lg hover:scale-105 hover:cursor-pointer' rel="noreferrer" target='_blank'>my resume</a>
+                <a href='https://drive.google.com/file/d/1n7WUrVsxw6HfVk1xVleNr1mMFnGixLPZ/view?usp=share_link' className='bg-bgviol text-white font-medium text-lg py-1 px-5 rounded-lg hover:scale-105 hover:cursor-pointer' rel="noreferrer" target='_blank'>my resume</a>
                 </div>;
                 image.current = about;
                 break;
