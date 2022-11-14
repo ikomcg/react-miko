@@ -25,11 +25,11 @@ export const Myprojects = () => {
     useEffect(() =>{
 
         const loc_url = window.location.pathname
-        switch(loc_url){
-            case '/home' || '/Home':
+        switch(loc_url.toLocaleLowerCase()){
+            case '/home':
                 set_Link(false)
                 break;
-            case '/project' || '/Project':
+            case '/project':
                 set_Link(true)
                 break;
             default:

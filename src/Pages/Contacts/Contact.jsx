@@ -13,11 +13,11 @@ const Contact = () =>{
        
         const loc = window.location.pathname
 
-        switch(loc) {
+        switch(loc.toLocaleLowerCase()) {
             case '/home':
                 setBol(false)
                 break;
-            case '/contact' || '/Contact':
+            case '/contact' :
                 setBol(true)
                 break;
             default:
