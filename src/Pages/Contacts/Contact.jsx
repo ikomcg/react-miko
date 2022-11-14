@@ -17,7 +17,7 @@ const Contact = () =>{
             case '/home':
                 setBol(false)
                 break;
-            case '/contact':
+            case '/contact' || '/Contact':
                 setBol(true)
                 break;
             default:

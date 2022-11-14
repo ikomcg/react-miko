@@ -19,6 +19,7 @@ const App = () => {
         <div className='my-16'>
           <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/home' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/project' element={<Project/>}/>
             <Route path='/skill' element={<Skill/>}/>

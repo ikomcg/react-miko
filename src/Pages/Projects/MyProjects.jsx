@@ -26,10 +26,10 @@ export const Myprojects = () => {
 
         const loc_url = window.location.pathname
         switch(loc_url){
-            case '/home':
+            case '/home' || '/Home':
                 set_Link(false)
                 break;
-            case '/project':
+            case '/project' || '/Project':
                 set_Link(true)
                 break;
             default:

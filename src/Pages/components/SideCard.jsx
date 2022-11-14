@@ -18,7 +18,7 @@ const SideCard = () => {
 
         
         switch(loc_url){
-            case '/about':
+            case '/about' || '/About':
                 heading.current = "about me";
                 paragraph.current = "I am a motivated Junior Web Developer that has experience in creating projects that address specific issues such as the Learning Management System, presently pursuing my long-term career goal is to become a Web Developer, and always eager to learn about coding and I'am currently studying at Balagtas STI."
                 btn.current = <div className='flex item-center justify-center mt-10'>
@@ -26,12 +26,12 @@ const SideCard = () => {
                 </div>;
                 image.current = about;
                 break;
-            case '/project':
+            case '/project' || '/Project':
                 heading.current = "my projects";
                 paragraph.current = "This are some my projects that I built while I'm on bootcamp and also using psd template this is was my first time I build website while practice and study the HTML CSS and JS, while I'm in bootcamp my skill has imporve and I embed other tools that will help me to achieve my desired project."
                 image.current = working;
                 break;
-            case '/skill':
+            case '/skill' || '/Skill':
                 heading.current = "my skills";
                 paragraph.current = "The tech stacks listed below are what I've been using to build real-world projects. HTML, CSS, JavaScript, and PHP are used in web development. Along with other tools that will enable me to complete my desired project.";
                 image.current = skill ;
