@@ -8,17 +8,6 @@ import { useState } from 'react';
 const  Header = () => {
 
     const [menu, setMenu] = useState(false)
-   
-
-    useEffect(() => {
-        const body =  document.querySelector('body')
-        if(menu){
-           body.style.overflowY = 'hidden'
-        }
-        else{
-           body.style.overflowY = 'auto'
-        }
-    }, [menu])
 
     function showMenu(){
             setMenu(val => !val)
