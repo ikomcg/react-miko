@@ -1,3 +1,5 @@
+import React from 'react'
+
 import motoRC from '../../images/home/motorcwide.png'
 import emed from '../../images/home/e-medlearning.png'
 import kodego from '../../images/home/kodegoelms.png'

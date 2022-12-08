@@ -26,6 +26,7 @@
    
 }
 @media(max-width:920px){
+
     main.main-home h2{
         font-size: 45px;
     }
@@ -218,9 +219,6 @@
 
         font-size: 18px;
         font-weight: 700;
-    }
-    div.contact-home div.left-form .book-meeting{
-
     }
     div.contact-home div.left-form .book-meeting a {
         display: flex;

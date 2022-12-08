@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import { HiMenu } from 'react-icons/hi';
@@ -8,16 +8,32 @@ import { useState } from 'react';
 
 
 const  Header = () => {
-    const [menu, setMenu] = useState(true)
+    const style = {
+       display: 'fixed'
+      };
 
-    function showMenu(e){
+    const [menu, setMenu] = useState(false)
+    const body =  document.querySelector('body')
+
+    useEffect(() => {
+        if(menu){
+           body.style.overflowY = 'hidden'
+        }
+        else{
+           body.style.overflowY = 'auto'
+        }
+    }, [menu])
+
+    function showMenu(){
             setMenu(val => !val)
     }
     document.addEventListener("mousedown", () => {
-        setMenu(true);
+        if(menu){
+            setMenu(false)
+        }
     })
-   
-    let menu_class = menu ? null : 'active-menu';
+
+    let menu_class = menu ? 'active-menu' : '';
 
     return (
         <header className='flex flex-nowrap justify-between p-8 items-center text-viol'> 
@@ -29,7 +45,7 @@ const  Header = () => {
                 </button>
             </div>
             <button onClick={showMenu} className='menu-mobile outline-none text-bgviol'>
-            {menu ?  <HiMenu className='text-3xl'/> : <AiOutlineCloseCircle className='text-3xl'/>}
+                {menu ? <AiOutlineCloseCircle className='text-3xl' /> : <HiMenu className='text-3xl'/>}
             </button>
             
         </header>

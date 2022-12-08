@@ -7,7 +7,7 @@ import Database from './Database'
 import html from '../../images/skill/html.png'
 import css from '../../images/skill/css.png'
 import js from '../../images/skill/js.png'
-import sass from '../../images/skill/Sass.png'
+
 
 
 
@@ -15,6 +15,7 @@ import sass from '../../images/skill/Sass.png'
 import bs from '../../images/skill/bs.png'
 import tw from '../../images/skill/tw.png'
 import rj from '../../images/skill/react.png'
+import sass from '../../images/skill/Sass.png'
 
 //database
 import php from '../../images/skill/php.png'
