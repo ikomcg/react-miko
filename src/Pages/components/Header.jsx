@@ -5,17 +5,13 @@ import { HiMenu } from 'react-icons/hi';
 import {AiOutlineCloseCircle} from 'react-icons/ai';
 import { useState } from 'react';
 
-
-
 const  Header = () => {
-    const style = {
-       display: 'fixed'
-      };
 
     const [menu, setMenu] = useState(false)
-    const body =  document.querySelector('body')
+   
 
     useEffect(() => {
+        const body =  document.querySelector('body')
         if(menu){
            body.style.overflowY = 'hidden'
         }
