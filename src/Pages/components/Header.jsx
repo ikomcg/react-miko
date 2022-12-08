@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import { HiMenu } from 'react-icons/hi';
@@ -8,6 +8,8 @@ import { useState } from 'react';
 const  Header = () => {
 
     const [menu, setMenu] = useState(false)
+   
+
 
     function showMenu(){
             setMenu(val => !val)
