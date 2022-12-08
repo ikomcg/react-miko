@@ -62,13 +62,13 @@
        gap: 20px;
 
        margin-top: 70px;
-       padding-left:40px ;
        
 
     }
     header div.nav-bar nav ul li{
         color: #7050EF;
-        padding: 0;
+        
+        padding-left:40px ;
     }
     header div.nav-bar button{
         background-color: transparent;
