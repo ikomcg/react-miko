@@ -36,8 +36,8 @@ const  Header = () => {
             <h1 className='w-fit font-extrabold text-2xl'>Miko.</h1>
             <div className={`nav-bar ${menu_class} flex flex-nowrap justify-between w-70`}>
                 <Navbar/>
-                <button className='btn-contact bg-bgviol p-2 pr-3 pl-3 w-fit text-white rounded-lg hover:scale-105'>
-                    <Link to='/contact'>Contact</Link>
+                <button className='btn-contact bg-bgviol w-fit text-white rounded-lg hover:scale-105'>
+                    <Link to='/contact' className='block p-2 px-5'>Contact</Link>
                 </button>
             </div>
             <button onClick={showMenu} className='menu-mobile outline-none text-bgviol'>

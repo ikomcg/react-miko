@@ -15,8 +15,8 @@ const Navbar = () => {
             <ul className='flex gap-10 text-xl font-semibold'>
                 {
                     navlink.map(nav => 
-                        <li key={nav.id} className='cursor-pointer hover:bg-bgviol/20 p-1 px-5 rounded hover:text-bgviol' >
-                            <Link to={nav.link}>{nav.nav}</Link>
+                        <li key={nav.id} >
+                            <Link to={nav.link} className='block cursor-pointer hover:bg-bgviol/20 p-1 px-5 rounded hover:text-bgviol'>{nav.nav}</Link>
                         </li>
                     )
                 }
